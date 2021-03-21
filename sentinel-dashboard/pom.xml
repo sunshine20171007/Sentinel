@@ -102,8 +102,10 @@
         <dependency>
             <groupId>com.alibaba.csp</groupId>
             <artifactId>sentinel-datasource-nacos</artifactId>
-            <scope>test</scope>
+            <!-- 我修改的地方 -->
+            <!-- <scope>test</scope>-->
         </dependency>
+
         <!-- for Apollo rule publisher sample -->
         <dependency>
             <groupId>com.ctrip.framework.apollo</groupId>
