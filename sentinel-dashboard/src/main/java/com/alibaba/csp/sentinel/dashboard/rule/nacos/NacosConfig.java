@@ -23,6 +23,8 @@ import com.alibaba.nacos.api.config.ConfigService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -44,6 +46,6 @@ public class NacosConfig {
 
     @Bean
     public ConfigService nacosConfigService() throws Exception {
-        return ConfigFactory.createConfigService("localhost:6060");
+        return ConfigFactory.createConfigService("172.50.111.54:6060");
     }
 }
